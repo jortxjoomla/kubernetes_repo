@@ -1,0 +1,8 @@
+secretGenerator: #generates secrets within the cluster
+- name: mysql-pass
+  literals:
+  - password=WP2022A.
+resources: #runs the .yaml files which are written below
+  - local-volumes.yaml
+  - mysql-deployment.yaml
+  - wordpress-deployment.yaml
