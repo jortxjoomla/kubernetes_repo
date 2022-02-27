@@ -6,7 +6,7 @@ metadata:
     app: nginx
 spec:
   containers:
-  - image: nginx/latest
+  - image: nginx
     name: nginx
     volumeMounts:
     - mountPath: /usr/share/nginx/html
